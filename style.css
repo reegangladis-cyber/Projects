@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "poppins", sans-serif;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background-color: #fff;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+.navbar-links {
+  display: flex;
+  column-gap: 20px;
+}
+.navbar-link a {
+  text-decoration: none;
+  color: #333;
+}
+.navbar-link a:hover {
+  color: #ff6600;
+}
+.navbar-menu-toggle {
+  display: none;
+}
+
+/*side navbar*/
+
+.side-navbar {
+  background-color: black;
+  width: 50%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: -60%;
+  padding: 20px;
+  color: white;
+  transition: 2s;
+  cursor: pointer;
+}
+.side-navbar-link {
+  margin-bottom: 30px;
+}
+.side-navbar-links a {
+  margin-bottom: 30px;
+  text-decoration: none;
+  color: white;
+}
+.side-navbar-links a {
+  text-decoration: none;
+  color: white;
+}
+.side-navbar-link a:hover {
+  color: #ff6600;
+}
+/*header*/
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 10%;
+  gap: 50px;
+}
+.header-button {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.header-button:hover {
+  background-color: orangered;
+  color: white;
+}
+/*service*/
+.service {
+  padding: 20px;
+}
+.service-container1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.service-container2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.service-container2 div {
+  background-color: #f2f4f7;
+  border-radius: 5px;
+  padding: 10px;
+  flex-direction: column;
+}
+.new-arrival {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.new-arrival-container {
+  position: relative;
+  flex-basis: 20%;
+}
+.new-arrival button {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-top: 10px;
+  color: #1d232c;
+  position: absolute;
+  top: 50%;
+  left: 18%;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.new-arrival button:hover {
+  background-color: orangered;
+  color: white;
+}
+/*news*/
+.news {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.news input {
+  padding: 11px;
+  width: 80vw;
+  margin-bottom: 10px;
+  border: solid black 3px;
+}
+.news button {
+  padding: 11px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.news button:hover {
+  background-color: orangered;
+  color: white;
+}
+
+/*footer*/
+.footer {
+  background-color: black;
+  padding: 40px;
+  margin: 20px;
+  color: white;
+}
+
+/*Collections*/
+/*products*/
+.product-section {
+  margin-top: 20px;
+}
+.product-search {
+  width: 80%;
+  border: solid black 3px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin: auto;
+}
+.product-search input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+}
+.product-search input:focus {
+  outline: none;
+}
+.product {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+.products-box {
+  flex-basis: 20%;
+  text-align: center;
+}
+.products-box img {
+  border-radius: 10px;
+}
+.products-box img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+/*contact us*/
+.contact-section {
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  border-radius: 30px;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 20px;
+  background-color: #000; /* black */
+  padding: 40px;
+  margin: 20px auto;
+  color: white;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.contact-form input {
+  padding: 10px;
+  border-radius: 5px;
+}
+.contact-form button {
+  padding: 10px;
+  border-radius: 5px;
+  background-color:white;
+  color:black;
+  border: none;
+  cursor: pointer;
+}
+.contact-form button:hover {
+  background-color: orangered;
+  color: white;
+}
+/* media query*/
+@media (max-width: 600px) {
+  .navbar-menu-toggle {
+    display: block;
+    cursor: pointer;
+  }
+  .navbar-links {
+    display: none;
+  }
+  .header-image {
+    display: none;
+  }
+  .service-container1 {
+    display: none;
+  }
+  .service-container2 {
+    flex-direction: column;
+  }
+}
